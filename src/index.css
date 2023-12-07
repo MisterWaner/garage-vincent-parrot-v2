@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #020202;
+    font-family: "Roboto", sans-serif;
+}
+
+.main {
+    margin-bottom: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+.font-racer {
+    font-family: "Racing Sans One", cursive;
+}
