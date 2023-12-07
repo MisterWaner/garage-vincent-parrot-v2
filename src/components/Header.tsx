@@ -6,9 +6,9 @@ export default function Header() {
     const links = [
         { label: "Mécanique", to: "/mecanique" },
         { label: "Carrosserie", to: "/carrosserie" },
-        { label: "Parc automobile", to: "/cars" },
+        { label: "Parc automobile", to: "/occasions" },
         { label: "Contact", to: "/contact" },
-        { label: "Accès professionnel", to: "/login" },
+        { label: "Accès professionnel", to: "/connexion" },
     ];
 
     const [open, setOpen] = useState(false);
@@ -45,7 +45,10 @@ export default function Header() {
                         </li>
                     ))}
                 </ul>
-                <button className="absolute top-16 right-6 border-0 icone-toggle bg-transparent p-1 lg:hidden w-9 h-9" onClick={toggleMenu}>
+                <button
+                    className="absolute top-16 right-6 border-0 icone-toggle bg-transparent p-1 lg:hidden w-9 h-9"
+                    onClick={toggleMenu}
+                >
                     {open ? <FaXmark /> : <FaBars />}
                 </button>
             </nav>
