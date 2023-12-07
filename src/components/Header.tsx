@@ -41,7 +41,14 @@ export default function Header() {
                             className="text-lg lg:text-xl hover:text-white duration-300"
                             onClick={toggleMenu}
                         >
-                            <NavLink to={link.to}>{link.label}</NavLink>
+                            <NavLink 
+                            style={({isActive}) => {
+                                return {
+                                    textDecoration: isActive ? 'underline' : 'none',
+                                    textUnderlineOffset: isActive ? "3px" : "0px",
+                                }
+                            }}
+                            to={link.to}>{link.label}</NavLink>
                         </li>
                     ))}
                 </ul>
