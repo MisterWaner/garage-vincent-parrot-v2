@@ -14,8 +14,9 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-.main {
+main {
     margin-bottom: auto;
+    margin-top: 200px;
 }
 
 h1,

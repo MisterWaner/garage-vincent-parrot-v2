@@ -18,8 +18,8 @@ export default function Header() {
     }
 
     return (
-        <header className="text-slate-50 fixed w-full z-40 top-0 left-0">
-            <nav className="lg:flex justify-between items-center">
+        <header className="text-slate-50 bg-black fixed w-full z-40 top-0 left-0">
+            <nav className="lg:flex lg:justify-between items-center">
                 <Link to="/" onClick={() => setOpen(false)}>
                     <img
                         className="w-40"
@@ -29,16 +29,16 @@ export default function Header() {
                 </Link>
 
                 <ul
-                    className={`w-full h-fit absolute lg:static transition-all duration-300 ease-in flex flex-col items-center py-5 space-y-5 z-[-1] list-none lg:z-auto lg:flex-row lg:space-y-0 lg:py-0 lg:justify-around ${
+                    className={`w-full lg:w-2/3 h-fit absolute lg:static transition-all duration-300 ease-in flex flex-col items-center py-5 space-y-5 z-[-1] list-none lg:z-auto lg:flex-row lg:space-y-0 lg:py-0 lg:justify-around ${
                         open
-                            ? "top-[160px] backdrop-blur-sm bg-black-02 lg:bg-transparent z-40 lg:backdrop-blur-none"
+                            ? "top-[160px] backdrop-blur-sm lg:bg-transparent z-40 lg:backdrop-blur-sm"
                             : "top-[-490px] backdrop-blur-none"
                     }`}
                 >
                     {links.map((link, index) => (
                         <li
                             key={index}
-                            className="text-lg lg:text-xl hover:text-white duration-300"
+                            className="text-lg lg:text-xl hover:text-red-600"
                             onClick={toggleMenu}
                         >
                             <NavLink 
@@ -53,7 +53,7 @@ export default function Header() {
                     ))}
                 </ul>
                 <button
-                    className="absolute top-16 right-6 border-0 icone-toggle bg-transparent p-1 lg:hidden w-9 h-9"
+                    className="absolute top-16 right-6 border-0 icone-toggle bg-transparent p-1 lg:hidden w-9 h-9 hover:text-red-600"
                     onClick={toggleMenu}
                 >
                     {open ? <FaXmark /> : <FaBars />}
