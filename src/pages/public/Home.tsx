@@ -1,4 +1,5 @@
 import HomePageCardList from "../../components/HomePageCard/HomePageCardList";
+import BrandLogoList from "../../components/HomePageCard/BrandLogoList";
 
 export default function Home() {
     return (
@@ -27,6 +28,12 @@ export default function Home() {
                         Nos services
                     </h2>
                     <HomePageCardList/>
+                </section>
+                <section className="mt-6">
+                    <h2 className="mb-4 text-center text-xl md:text-3xl lg:text-5xl">
+                        Nos marques
+                    </h2>
+                    <BrandLogoList/>
                 </section>
             </main>
         </>
