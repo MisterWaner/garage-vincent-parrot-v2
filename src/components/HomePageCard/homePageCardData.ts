@@ -27,7 +27,7 @@ export const cardDatas = [
     {
         id: 3,
         icon: wheelIcon,
-        text: "Un nombreux choix de pièces détachées et d'accessoires",
+        text: "Une large gamme de pièces détachées et d'accessoires",
     },
     {
         id: 4,

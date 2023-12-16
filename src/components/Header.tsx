@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaBars, FaXmark } from "react-icons/fa6";
 
-export default function Header() {
+export default function Header(): JSX.Element {
     const links = [
         { label: "Mécanique", to: "/mecanique" },
         { label: "Carrosserie", to: "/carrosserie" },
@@ -18,7 +18,7 @@ export default function Header() {
     }
 
     return (
-        <header className="text-slate-50 bg-black fixed w-full z-40 top-0 left-0">
+        <header className="text-yellow-500 bg-black fixed w-full z-40 top-0 left-0">
             <nav className="lg:flex lg:justify-between items-center">
                 <Link to="/" onClick={() => setOpen(false)}>
                     <img
